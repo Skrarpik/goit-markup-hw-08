@@ -1,0 +1,10 @@
+.hover--brand-color {
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.hover--brand-color:hover,
+.hover--brand-color:focus {
+  color: var(--brand-color);
+}

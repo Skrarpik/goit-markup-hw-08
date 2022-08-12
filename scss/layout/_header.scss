@@ -1,0 +1,13 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  font-weight: 500;
+  line-height: 1.1;
+
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+  & .logo {
+    margin-right: 93px;
+  }
+}

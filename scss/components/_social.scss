@@ -1,0 +1,23 @@
+.social-nav {
+  --card-item: 4;
+  --card-gap: 10px;
+}
+.social-item {
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  fill: var(--icon-color);
+  transition-property: background-color, fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--brand-color);
+  fill: var(--background-color1);
+}

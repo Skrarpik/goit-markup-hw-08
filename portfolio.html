@@ -31,10 +31,12 @@
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
-              <a class="nav__link link hover--brand-color nav_active" href="./index.html">Студия</a>
+              <a class="nav__link link hover--brand-color" href="./index.html">Студия</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link link hover--brand-color" href="./portfolio.html">Портфолио</a>
+              <a class="nav__link link hover--brand-color nav_active" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="nav__item">
               <a class="nav__link link hover--brand-color" href="#">Контакты</a>
@@ -83,13 +85,33 @@
             <li class="projects-item card-item">
               <a class="link projects-link" href="/">
                 <div class="projects-thumb">
-                  <img
-                    class="projects-img"
-                    src="./images/projects/img1.jpg"
-                    width="370"
-                    height="294"
-                    alt="Веб-сайт Технокряк"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/img-1@1x_l.jpg 1x,
+                        ./images/projects/img-1@2x_l.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/img-1@1x_m.jpg 1x,
+                        ./images/projects/img-1@2x_m.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/img-1@1x_s.jpg 1x,
+                        ./images/projects/img-1@2x_s.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <img
+                      class="projects-img"
+                      src="./images/projects/img-1@1x_s.jpg"
+                      alt="Веб-сайт Технокряк"
+                  /></picture>
                   <p class="projects-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения<br />о
@@ -105,13 +127,33 @@
             <li class="projects-item card-item">
               <a class="link projects-link" href="/">
                 <div class="projects-thumb">
-                  <img
-                    class="projects-img"
-                    src="./images/projects/img2.jpg"
-                    width="370"
-                    height="294"
-                    alt="Дизайн Постер New Orlean vs Golden Star"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/img-2@1x_l.jpg 1x,
+                        ./images/projects/img-2@2x_l.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/img-2@1x_m.jpg 1x,
+                        ./images/projects/img-2@2x_m.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/img-2@1x_s.jpg 1x,
+                        ./images/projects/img-2@2x_s.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <img
+                      class="projects-img"
+                      src="./images/projects/img-2@1x_s.jpg"
+                      alt="Дизайн Постер New Orlean vs Golden Star"
+                  /></picture>
                   <p class="projects-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения<br />о
@@ -127,13 +169,33 @@
             <li class="projects-item card-item">
               <a class="link projects-link" href="/">
                 <div class="projects-thumb">
-                  <img
-                    class="projects-img"
-                    src="./images/projects/img3.jpg"
-                    width="370"
-                    height="294"
-                    alt="Приложение Ресторан Seafood"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/img-3@1x_l.jpg 1x,
+                        ./images/projects/img-3@2x_l.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/img-3@1x_m.jpg 1x,
+                        ./images/projects/img-3@2x_m.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/img-3@1x_s.jpg 1x,
+                        ./images/projects/img-3@2x_s.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <img
+                      class="projects-img"
+                      src="./images/projects/img-3@1x_s.jpg"
+                      alt="Приложение Ресторан Seafood"
+                  /></picture>
                   <p class="projects-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения<br />о
@@ -149,13 +211,33 @@
             <li class="projects-item card-item">
               <a class="link projects-link" href="/">
                 <div class="projects-thumb">
-                  <img
-                    class="projects-img"
-                    src="./images/projects/img4.jpg"
-                    width="370"
-                    height="294"
-                    alt="Маркетинг Проект Prime"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/img-4@1x_l.jpg 1x,
+                        ./images/projects/img-4@2x_l.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/img-4@1x_m.jpg 1x,
+                        ./images/projects/img-4@2x_m.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/img-4@1x_s.jpg 1x,
+                        ./images/projects/img-4@2x_s.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <img
+                      class="projects-img"
+                      src="./images/projects/img-4@1x_s.jpg"
+                      alt="Маркетинг Проект Prime"
+                  /></picture>
                   <p class="projects-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения<br />о
@@ -171,13 +253,33 @@
             <li class="projects-item card-item">
               <a class="link projects-link" href="/">
                 <div class="projects-thumb">
-                  <img
-                    class="projects-img"
-                    src="./images/projects/img5.jpg"
-                    width="370"
-                    height="294"
-                    alt="Приложение Проект Boxes"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/img-5@1x_l.jpg 1x,
+                        ./images/projects/img-5@2x_l.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/img-5@1x_m.jpg 1x,
+                        ./images/projects/img-5@2x_m.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/img-5@1x_s.jpg 1x,
+                        ./images/projects/img-5@2x_s.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <img
+                      class="projects-img"
+                      src="./images/projects/img-5@1x_s.jpg"
+                      alt="Приложение Проект Boxes"
+                  /></picture>
                   <p class="projects-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения<br />о
@@ -193,13 +295,35 @@
             <li class="projects-item card-item">
               <a class="link projects-link" href="/">
                 <div class="projects-thumb">
-                  <img
-                    class="projects-img"
-                    src="./images/projects/img6.jpg"
-                    width="370"
-                    height="294"
-                    alt="Веб-сайт Inspiration has no Borders"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/img-6@1x_l.jpg 1x,
+                        ./images/projects/img-6@2x_l.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/img-6@1x_m.jpg 1x,
+                        ./images/projects/img-6@2x_m.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/img-6@1x_s.jpg 1x,
+                        ./images/projects/img-6@2x_s.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <img
+                      class="projects-img"
+                      src="./images/projects/img-6@1x_s.jpg"
+                      width="370"
+                      height="294"
+                      alt="Веб-сайт Inspiration has no Borders"
+                  /></picture>
                   <p class="projects-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения<br />о
@@ -215,13 +339,33 @@
             <li class="projects-item card-item">
               <a class="link projects-link" href="/">
                 <div class="projects-thumb">
-                  <img
-                    class="projects-img"
-                    src="./images/projects/img7.jpg"
-                    width="370"
-                    height="294"
-                    alt="Дизайн Издание Limited Edition"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/img-7@1x_l.jpg 1x,
+                        ./images/projects/img-7@2x_l.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/img-7@1x_m.jpg 1x,
+                        ./images/projects/img-7@2x_m.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/img-7@1x_s.jpg 1x,
+                        ./images/projects/img-7@2x_s.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <img
+                      class="projects-img"
+                      src="./images/projects/img-7@1x_s.jpg"
+                      alt="Дизайн Издание Limited Edition"
+                  /></picture>
                   <p class="projects-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения<br />о
@@ -237,13 +381,33 @@
             <li class="projects-item card-item">
               <a class="link projects-link" href="/">
                 <div class="projects-thumb">
-                  <img
-                    class="projects-img"
-                    src="./images/projects/img8.jpg"
-                    width="370"
-                    height="294"
-                    alt="Маркетинг Проект LAB"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/img-8@1x_l.jpg 1x,
+                        ./images/projects/img-8@2x_l.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/img-8@1x_m.jpg 1x,
+                        ./images/projects/img-8@2x_m.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/img-8@1x_s.jpg 1x,
+                        ./images/projects/img-8@2x_s.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <img
+                      class="projects-img"
+                      src="./images/projects/img-8@1x_s.jpg"
+                      alt="Маркетинг Проект LAB"
+                  /></picture>
                   <p class="projects-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения<br />о
@@ -259,13 +423,33 @@
             <li class="projects-item card-item">
               <a class="link projects-link" href="/">
                 <div class="projects-thumb">
-                  <img
-                    class="projects-img"
-                    src="./images/projects/img9.jpg"
-                    width="370"
-                    height="294"
-                    alt="Приложение Growing Business"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/projects/img-9@1x_l.jpg 1x,
+                        ./images/projects/img-9@2x_l.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/projects/img-9@1x_m.jpg 1x,
+                        ./images/projects/img-9@2x_m.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/projects/img-9@1x_s.jpg 1x,
+                        ./images/projects/img-9@2x_s.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <img
+                      class="projects-img"
+                      src="./images/projects/img-9@1x_s.jpg"
+                      alt="Приложение Growing Business"
+                  /></picture>
                   <p class="projects-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения<br />о

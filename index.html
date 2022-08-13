@@ -126,8 +126,9 @@
             <li class="work__item card-item">
               <div class="work__thumb">
                 <img
+                  srcset="./images/work/img-3@1x_l.jpg 1x, ./images/work/img-3@2x_l.jpg 2x"
                   class="work__img"
-                  src="./images/work/box1.jpg"
+                  src="./images/work/img-3@1x_l.jpg"
                   width="370"
                   height="294"
                   alt="Десктопные приложения"
@@ -138,8 +139,9 @@
             <li class="work__item card-item">
               <div class="work__thumb">
                 <img
+                  srcset="./images/work/img-2@1x_l.jpg 1x, ./images/work/img-2@2x_l.jpg 2x"
                   class="work__img"
-                  src="./images/work/box2.jpg"
+                  src="./images/work/img-2@1x_l.jpg"
                   width="370"
                   height="294"
                   alt="Мобильная разработка"
@@ -150,8 +152,9 @@
             <li class="work__item card-item">
               <div class="work__thumb">
                 <img
+                  srcset="./images/work/img-1@1x_l.jpg 1x, ./images/work/img-1@2x_l.jpg 2x"
                   class="work__img"
-                  src="./images/work/box3.jpg"
+                  src="./images/work/img-1@1x_l.jpg"
                   width="370"
                   height="294"
                   alt="Дизаин"
@@ -167,12 +170,21 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team_list list card-set">
             <li class="team__item card-item">
-              <img
-                src="./images/team/igor.jpg"
-                width="270"
-                height="260"
-                alt="Сотрудник Игорь Демьяненко"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-4@1x_l.jpg 1x, ./images/team/img-4@2x_l.jpg 2x"
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-4@1x_m.jpg 1x, ./images/team/img-4@2x_m.jpg 2x"
+                  type="image/jpg" />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-4@1x_s.jpg 1x, ./images/team/img-4@2x_s.jpg 2x"
+                  type="image/jpg" />
+                <img src="./images/team/img-4@1x_s.jpg" alt="Сотрудник Игорь Демьяненко"
+              /></picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__work" lang="en">Product Designer</p>
@@ -205,12 +217,21 @@
               </div>
             </li>
             <li class="team__item card-item">
-              <img
-                src="./images/team/olga.jpg"
-                width="270"
-                height="260"
-                alt="Сотрудник Ольга Репина"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-3@1x_l.jpg 1x, ./images/team/img-3@2x_l.jpg 2x"
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-3@1x_m.jpg 1x, ./images/team/img-3@2x_m.jpg 2x"
+                  type="image/jpg" />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-3@1x_s.jpg 1x, ./images/team/img-3@2x_s.jpg 2x"
+                  type="image/jpg" />
+                <img src="./images/team/img-3@1x_s.jpg" alt="Сотрудник Ольга Репина"
+              /></picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__work" lang="en">Frontend Developer</p>
@@ -243,12 +264,24 @@
               </div>
             </li>
             <li class="team__item card-item">
-              <img
-                src="./images/team/nikolai.jpg"
-                width="270"
-                height="260"
-                alt="Сотрудник Николай Тарасов"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-2@1x_l.jpg 1x, ./images/team/img-2@2x_l.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-2@1x_m.jpg 1x, ./images/team/img-2@2x_m.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-2@1x_s.jpg 1x, ./images/team/img-2@2x_s.jpg 2x"
+                  type="image/jpg"
+                />
+                <img src=./images/team/img-2@1x_s.jpg"" alt="Сотрудник Николай Тарасов" /></picture
+              >
               <div class="team__wrapper">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__work" lang="en">Marketing</p>
@@ -281,12 +314,21 @@
               </div>
             </li>
             <li class="team__item card-item">
-              <img
-                src="./images/team/michail.jpg"
-                width="270"
-                height="260"
-                alt=" Сотрудник Михаил Ермаков"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-1@1x_l.jpg 1x, ./images/team/img-1@2x_l.jpg 2x"
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-1@1x_m.jpg 1x, ./images/team/img-1@2x_m.jpg 2x"
+                  type="image/jpg" />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-1@1x_s.jpg 1x, ./images/team/img-1@2x_s.jpg 2x"
+                  type="image/jpg" />
+                <img src="./images/team/img-1@1x_s.jpg" alt=" Сотрудник Михаил Ермаков"
+              /></picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__work" lang="en">UI Designer</p>

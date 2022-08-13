@@ -1,5 +1,13 @@
 .skills__list {
-  --card-item: 4;
+  --card-item: 1;
+  padding-top: 0;
+
+  @media screen and (min-width: 768px) {
+    --card-item: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --card-item: 4;
+  }
 }
 .skills__wrap {
   display: flex;
@@ -16,7 +24,7 @@
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--text-color);
 }

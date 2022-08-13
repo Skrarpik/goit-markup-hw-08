@@ -21,6 +21,11 @@
     <header class="header">
       <div class="container header-container">
         <a class="logo link" href="./index.html"> Web<span class="logo--black">Studio</span></a>
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -30,7 +35,7 @@
               <a class="nav__link link hover--brand-color" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link link hover--brand-color" href="">Контакты</a>
+              <a class="nav__link link hover--brand-color" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -362,7 +367,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container footer-container card-set">
         <div class="container-address footer-item">
           <a class="logo link" href="./index.html"> Web<span class="logo--white">Studio</span></a>
           <address>
@@ -421,7 +426,7 @@
         </div>
         <form class="footer-item newsletter" autocomplete="on">
           <label class="footer-title" for="email">Подпишитесь на рассылку</label>
-          <div class="newsletter-wrap">
+          <div class="newsletter-wrap card-set">
             <input class="input-email" type="email" name="email" id="email" placeholder="E-mail" />
             <button class="btn btn-input" type="submit">
               Подписаться<svg class="icon-send" width="24" height="24">
@@ -432,6 +437,39 @@
         </form>
       </div>
     </footer>
+
+    <div class="menu" data-menu>
+      <button class="menu__close" data-menu-close>
+        <svg class="close" width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="menu__nav-list list">
+        <li class="menu__nav-item">
+          <a href="./index.html" class="menu__nav-link hover--brand-color link">Студия</a>
+        </li>
+        <li class="menu__nav-item">
+          <a href="./portfolio.html" class="menu__nav-link hover--brand-color link">Портфолио</a>
+        </li>
+        <li class="menu__nav-item"><a href="#" class="menu__nav-link link">Контакты</a></li>
+      </ul>
+      <ul class="menu__contacts-list list">
+        <li class="menu__contacts-tel">
+          <a class="menu__contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="menu__contacts-mail">
+          <a class="menu__contacts-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="menu__social-list list">
+        <li class="menu__social-item"><a href="#" class="menu__social-link link">Instagram</a></li>
+        <li class="menu__social-item"><a href="#" class="menu__social-link link">Twitter</a></li>
+        <li class="menu__social-item"><a href="#" class="menu__social-link link">Facebook</a></li>
+        <li class="menu__social-item"><a href="#" class="menu__social-link link">LinkedIn</a></li>
+      </ul>
+    </div>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="btn-close" data-modal-close>
@@ -491,5 +529,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

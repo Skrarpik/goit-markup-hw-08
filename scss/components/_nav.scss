@@ -1,6 +1,14 @@
 .nav__list {
-  display: flex;
-  color: var(--text-color);
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    color: var(--text-color);
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    color: var(--text-color);
+  }
 }
 
 .nav__item:not(:last-child) {

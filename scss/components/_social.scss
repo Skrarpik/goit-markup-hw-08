@@ -1,8 +1,10 @@
 .social-nav {
   --card-item: 4;
   --card-gap: 10px;
+  justify-content: center;
 }
 .social-item {
+  display: contents;
 }
 .social-link {
   display: flex;

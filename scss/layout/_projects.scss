@@ -1,3 +1,12 @@
+.projects-item {
+  --card-item: 1;
+  @media screen and (min-width: 768px) {
+    --card-item: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --card-item: 3;
+  }
+}
 .projects-link {
   display: block;
   transition-property: box-shadow;

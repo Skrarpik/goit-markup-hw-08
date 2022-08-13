@@ -1,3 +1,5 @@
+.filters-item {
+}
 .btn-filters {
   font-weight: 500;
   font-size: 16px;
@@ -24,7 +26,14 @@
 .filters-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 9px;
+
+  --card-gap: 9px;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
 }

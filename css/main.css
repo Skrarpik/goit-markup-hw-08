@@ -522,6 +522,7 @@ img {
 }
 
 .menu-btn {
+  padding: 0;
   margin-left: auto;
   display: inline-flex;
   align-items: center;
@@ -761,6 +762,7 @@ img {
 }
 
 .client-list {
+  justify-content: center;
   --card-item: 2;
 }
 @media screen and (min-width: 768px) {
@@ -916,7 +918,7 @@ address {
 }
 
 .input-email {
-  min-width: 450px;
+  min-width: 100%;
   min-height: 50px;
   padding: 15px;
   background: none;

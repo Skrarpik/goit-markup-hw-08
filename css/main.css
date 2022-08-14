@@ -287,8 +287,9 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 450px;
-  min-height: 609px;
+  max-width: 450px;
+  width: 100%;
+  max-height: 609px;
   background-color: var(--background-color1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -374,6 +375,7 @@ img {
 
 .checkbox-icon {
   display: inline-block;
+  flex-shrink: 0;
   width: 16px;
   height: 15px;
   border: 2px solid var(--text-color);
@@ -548,6 +550,10 @@ img {
   fill: var(--brand-color);
 }
 
+.menu__active {
+  color: var(--brand-color);
+}
+
 .menu {
   position: fixed;
   top: 0;
@@ -606,7 +612,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: auto;
+  margin-bottom: 64px;
 }
 .menu__contacts-tel {
   font-size: 34px;
@@ -971,6 +977,11 @@ address {
   background-size: cover;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/img@1x_s.jpg");
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/img@2x_s.jpg");
+  }
+}
 @media screen and (min-width: 768px) {
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/img@1x_m.jpg");
@@ -999,10 +1010,16 @@ address {
 .hero-title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
 }
 
 .projects-item {

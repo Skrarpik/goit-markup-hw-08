@@ -19,6 +19,9 @@
 .menu-btn:active {
   fill: var(--brand-color);
 }
+.menu__active {
+  color: var(--brand-color);
+}
 .menu {
   position: fixed;
   top: 0;
@@ -76,7 +79,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    margin-bottom: auto;
+    margin-bottom: 64px;
   }
   &__contacts-tel {
     font-size: 34px;

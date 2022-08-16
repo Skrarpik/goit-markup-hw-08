@@ -118,15 +118,12 @@ img {
 .filters-list {
   display: flex;
   flex-wrap: wrap;
-  --card-gap: 9px;
+  row-gap: 9px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
-  .filters-list {
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1200px) {
   .filters-list {
     justify-content: center;
   }
@@ -1058,7 +1055,9 @@ address {
 }
 
 .projects-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition-property: box-shadow;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
@@ -1095,9 +1094,11 @@ address {
   transition-property: transform;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
+  overflow: auto;
 }
 
 .projects-wrapper {
+  flex-grow: 1;
   padding: 20px 24px;
   font-size: 16px;
   line-height: 1.9;

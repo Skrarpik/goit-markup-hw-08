@@ -7,7 +7,9 @@
   }
 }
 .projects-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition-property: box-shadow;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
@@ -41,8 +43,10 @@
   transition-property: transform;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
+  overflow: auto;
 }
 .projects-wrapper {
+  flex-grow: 1;
   padding: 20px 24px;
   font-size: 16px;
   line-height: 1.9;

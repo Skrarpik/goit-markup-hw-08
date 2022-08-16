@@ -2,6 +2,7 @@
   display: none;
 
   @media screen and (min-width: 1200px) {
+    --card-item: 3;
     padding-top: 0;
     display: block;
   }

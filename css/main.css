@@ -254,6 +254,8 @@ img {
     display: flex;
     flex-direction: column;
     margin-left: auto;
+    font-size: 12px;
+    line-height: 1.1666666667;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -261,6 +263,8 @@ img {
     display: flex;
     flex-direction: row;
     margin-left: auto;
+    font-size: 14px;
+    line-height: 1.1428571429;
   }
 }
 
@@ -990,7 +994,6 @@ address {
 
 .overlay {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;

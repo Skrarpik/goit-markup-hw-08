@@ -299,7 +299,7 @@ img {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
 }
-@media screen and (max-height: 480px) {
+@media screen and (max-height: 500px) {
   .modal {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -430,7 +430,7 @@ img {
   line-height: 1.14em;
   letter-spacing: 0.01em;
 }
-@media screen and (max-height: 480px) {
+@media screen and (max-height: 500px) {
   .comment-form {
     height: 60px;
   }
@@ -839,19 +839,15 @@ img {
 @media screen and (min-width: 768px) {
   .footer-container {
     flex-direction: row;
-    --card-gap: 60px;
     -moz-column-gap: 165px;
          column-gap: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-container {
-    flex-direction: row;
     align-items: baseline;
     justify-content: start;
-    --card-gap: 70px;
-    -moz-column-gap: 70px;
-         column-gap: 70px;
+    gap: 70px;
   }
 }
 
@@ -936,7 +932,6 @@ address {
 }
 
 .newsletter-wrap {
-  --card-item: 1;
   --card-gap: 20px;
 }
 @media screen and (min-width: 1200px) {

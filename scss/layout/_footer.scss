@@ -12,16 +12,12 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    --card-gap: 60px;
     column-gap: 165px;
   }
   @media screen and (min-width: 1200px) {
-    flex-direction: row;
     align-items: baseline;
     justify-content: start;
-
-    --card-gap: 70px;
-    column-gap: 70px;
+    gap: 70px;
   }
 }
 
@@ -29,8 +25,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: 768px) {
-  }
+
   @media screen and (min-width: 1200px) {
     display: block;
     align-items: start;
@@ -76,8 +71,6 @@ address {
   font-size: 14px;
   line-height: 1.7;
 
-  @media screen and (min-width: 768px) {
-  }
   @media screen and (min-width: 1200px) {
     display: block;
   }
@@ -102,10 +95,8 @@ address {
   justify-content: center;
 }
 .newsletter-wrap {
-  --card-item: 1;
   --card-gap: 20px;
-  @media screen and (min-width: 768px) {
-  }
+
   @media screen and (min-width: 1200px) {
     --card-gap: 12px;
   }

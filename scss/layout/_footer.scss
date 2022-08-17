@@ -67,21 +67,18 @@ address {
 .address-list {
   display: flex;
   flex-direction: column;
+  gap: 9px;
   align-items: center;
   font-size: 14px;
   line-height: 1.7;
 
   @media screen and (min-width: 1200px) {
-    display: block;
+    display: flex;
+    align-items: start;
   }
 }
 
-.address-item {
-  gap: 9px;
-}
-
 .address-link {
-  padding: 5px;
   color: rgba(255, 255, 255, 0.6);
 }
 
